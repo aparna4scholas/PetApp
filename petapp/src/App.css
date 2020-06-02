@@ -40,17 +40,20 @@ height: 4px;
   display: flex;
   flex-direction: row ;
   flex-wrap: wrap;
-  flex-flow: column;
-  grid-auto-flow: row;
+  flex-flow: row;
   justify-content: center;
-  align-items: flex-start;
+  align-content: space-around;
   margin-right: 50px;
   
+}
+.button{
+  background-color: seagreen;
 }
 
 .sss >div{
   border: chartreuse;
   padding: 1cm;
+  width: 25%;
 }
 .imagebox{
   width: 300px;

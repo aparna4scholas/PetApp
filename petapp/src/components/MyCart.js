@@ -28,7 +28,9 @@ class MyCart extends Component {
         }
     clear(){
         alert('clear');
-        localStorage.removeItem("data");
+        localStorage.removeItem('data');
+         
+        this.componentWillMount();
 
     }
     checkout(){
@@ -51,7 +53,7 @@ class MyCart extends Component {
            // alert(" fav pet removed to cart ",this.state.cart.length);
             localStorage.setItem('data',JSON.stringify(this.state.cart));
             //return;
-            this.render();
+            this.componentWillMount();
         }
 
 

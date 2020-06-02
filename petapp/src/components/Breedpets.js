@@ -41,7 +41,7 @@ const API_URL_ak = 'https://dog.ceo/api/breed/hound/images/random/3';
     }
     adoptme(breed){
 
-        alert(breed);
+       // alert(breed);
 
         localStorage.getItem('data') && this.setState({
             cart: JSON.parse(localStorage.getItem('data')),
@@ -49,9 +49,10 @@ const API_URL_ak = 'https://dog.ceo/api/breed/hound/images/random/3';
         })
         
             this.state.cart.push(breed);
+            
             alert(" fav pet added to cart ",this.state.cart.length);
             localStorage.setItem('data',JSON.stringify(this.state.cart));
-            return;
+            this.componentDidMount();
         }
     
 
