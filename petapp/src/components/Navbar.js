@@ -11,7 +11,7 @@ return(
 
   
   <nav>
-   <h1>  Shelter </h1>
+   <h1 font="bold">  Shelter </h1>
    <ul className="navbar_link">
        <Link style={navStyle} to='/Home'>
        <li> Home</li>
@@ -21,6 +21,9 @@ return(
        </Link>
        <Link style={navStyle} to='HealthTips'>
        <li> HealthTips</li>
+       </Link >
+       <Link style={navStyle} to='MyCart'>
+       <li> MyCart</li>
        </Link >
         </ul>
 </nav>
