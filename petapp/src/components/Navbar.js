@@ -17,7 +17,7 @@ return(
        <li> Home</li>
        </Link>
        <Link  style={navStyle} to='/Breedpets'>
-       <li> Breedpets</li>
+       <li> Adopt</li>
        </Link>
        <Link style={navStyle} to='HealthTips'>
        <li> HealthTips</li>

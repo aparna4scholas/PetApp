@@ -9,8 +9,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 12vh;
-  background-color:rgb(42,14, 199);
-  color:white;
+  background-color:palevioletred;
+  color:red;
 
 }
 .navbar_link {
@@ -57,7 +57,7 @@ height: 4px;
   width: 300px;
   height: 300px;
   border: 10ch;
-  border-left-color: blue;
+  border-left-color:fuchsia;
 }
 
  
