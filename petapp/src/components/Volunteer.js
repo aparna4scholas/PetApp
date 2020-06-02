@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
- class Healthtips extends Component {
+ class Volunteer extends Component {
     render() {
         return (
             <div>
@@ -9,4 +9,4 @@ import React, { Component } from 'react'
         )
     }
 }
-export default Healthtips;
+export default Volunteer;
