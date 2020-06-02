@@ -9,11 +9,14 @@ class MyCart extends Component {
              }
 
              this.clear = this.clear.bind(this);
+             this.removefromcart = this.removefromcart.bind(this);
+
         }
 
         componentWillUnmount(){
             this.state.cart = [];
         }
+
 
         componentWillMount(){
             
@@ -33,6 +36,23 @@ class MyCart extends Component {
       
 
     }
+    
+    removefromcart(breed){
+
+        alert(breed);
+
+        localStorage.getItem('data') && this.setState({
+            cart: JSON.parse(localStorage.getItem('data')),
+            isLoading : false
+        })
+        
+        this.state.cart.splice(this.state.cart.indexOf(breed),1);
+
+           // alert(" fav pet removed to cart ",this.state.cart.length);
+            localStorage.setItem('data',JSON.stringify(this.state.cart));
+            //return;
+            this.render();
+        }
 
 
     render() {
@@ -44,7 +64,8 @@ class MyCart extends Component {
                 {this.state.cart.map((breed) => (
                     <div >
                        <img id={breed} name={breed} className="imagebox" src={breed} alt="No value" value={breed}/>
-                       
+                       <button onClick={this.removefromcart.bind(this,breed)}>Remove</button>
+
                     </div>
 
 

@@ -17,7 +17,7 @@ const API_URL_ak = 'https://dog.ceo/api/breed/hound/images/random/3';
         breedtype : '',
         allBreeds: [],
         cart : [],
-        breeds : ['hound','african'],
+        breeds : ['hound','african','airedale','akita','appenzeller','australian','basenji'],
         
         
     }
@@ -60,7 +60,6 @@ const API_URL_ak = 'https://dog.ceo/api/breed/hound/images/random/3';
         const value = target.value;
         const name = target.name;
 
-         
          this.getData(value);
       }
 
@@ -72,7 +71,7 @@ const API_URL_ak = 'https://dog.ceo/api/breed/hound/images/random/3';
 
         return (
             <div>
-                
+                Breeds :
                 <select name="breedtype" id="breedtype" onChange={this.handleChange}>
                     {options} 
              </select>
@@ -81,7 +80,7 @@ const API_URL_ak = 'https://dog.ceo/api/breed/hound/images/random/3';
                     <div >
                        <img id={breed} name={breed} className="imagebox" src={breed} alt="No value" value={breed}/>
                        {/* <button onClick={this.adoptme}>Adopt Me </button> */}
-                       <button onClick={this.adoptme.bind(this,breed)}>Adopt Me</button>
+                       <button onClick={this.adoptme.bind(this,breed)}>Add to Cart</button>
 
                     </div>
 
