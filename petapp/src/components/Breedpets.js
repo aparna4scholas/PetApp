@@ -72,6 +72,7 @@ const API_URL_ak = 'https://dog.ceo/api/breed/hound/images/random/3';
 
         return (
             <div>
+                
                 <select name="breedtype" id="breedtype" onChange={this.handleChange}>
                     {options} 
              </select>
