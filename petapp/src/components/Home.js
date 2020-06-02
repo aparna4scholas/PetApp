@@ -5,9 +5,10 @@ import img1 from '../components/assets/img1.png';
     render() {
         return (
             <div>
-                
+               <h2 > Unconditional love is as close as your nearest shelter</h2> 
                 <div className="img_1">
             <img className="img1" src={img1} alt='mypet' />
+            
           </div>
             </div>
         )
