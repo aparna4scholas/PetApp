@@ -36,7 +36,19 @@ width: 60px;
 height: 4px;
 }
 
-.sss{
+.grid-container {
+  grid-template-columns: auto auto auto;
+  background-color:white;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: #d4d245cc;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+/*.sss{
   display: flex;
   flex-direction: row ;
   flex-wrap: wrap;
@@ -45,7 +57,7 @@ height: 4px;
   align-content: space-around;
   margin-right: 50px;
   
-}
+}*/
 .button{
   background-color: seagreen;
 }

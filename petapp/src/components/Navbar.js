@@ -19,8 +19,8 @@ return(
        <Link  style={navStyle} to='/Breedpets'>
        <li> Adopt</li>
        </Link>
-       <Link style={navStyle} to='HealthTips'>
-       <li> HealthTips</li>
+       <Link style={navStyle} to='Volunteer'>
+       <li> Volunteer</li>
        </Link >
        <Link style={navStyle} to='MyCart'>
        <li> MyCart</li>
