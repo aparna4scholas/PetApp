@@ -76,9 +76,9 @@ const API_URL_ak = 'https://dog.ceo/api/breed/hound/images/random/3';
                 <select name="breedtype" id="breedtype" onChange={this.handleChange}>
                     {options} 
              </select>
-                <div className="grid-container">
+                <div className="wrapper">
                 {this.state.allBreeds.map((breed) => (
-                    <div className="grid-item">
+                    <div className="wrapper1">
                        <img id={breed} name={breed} className="imagebox" src={breed} alt="No value" value={breed}/>
                        {/* <button onClick={this.adoptme}>Adopt Me </button> */}
                        <button onClick={this.adoptme.bind(this,breed)}>Add to Cart</button>
