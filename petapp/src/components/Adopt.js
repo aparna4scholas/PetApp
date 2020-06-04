@@ -6,7 +6,7 @@ const API_URL = 'https://dog.ceo/api';
 const API_URL_ak = 'https://dog.ceo/api/breed/hound/images/random/3';
 
 
- class Breedpets extends Component {
+ class Adopt extends Component {
     
     
     constructor(props) {
@@ -94,7 +94,7 @@ const API_URL_ak = 'https://dog.ceo/api/breed/hound/images/random/3';
         )
     }
 }
-export default Breedpets;
+export default Adopt;
 
 
 

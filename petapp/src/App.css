@@ -4,7 +4,7 @@
 
 
 nav {
-display: flex;
+display: gird;
   justify-content: space-around;
   align-items: center;
   min-height: 12vh;
@@ -38,7 +38,7 @@ height: 4px;
 
 .wrapper1 {
  display: grid;
- grid-template-columns: 1fr 1fr;
+ grid-template-columns: 25% 25% 25%;
 grid-template-rows: auto;
 }
 .imagebox {
@@ -71,6 +71,10 @@ grid-template-rows: auto;
   height: 300px;
   border: 10ch;
   border-left-color:fuchsia;
+}
+.main-para{
+  width: 800px;
+  height: 400px;
 }
 
 

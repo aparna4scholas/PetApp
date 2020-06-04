@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css';
 import Navbar from './components/Navbar.js';
-import Breedpets from './components/Breedpets.js';
+import Adopt from './components/Adopt.js';
 import Volunteer from './components/Volunteer.js';
 import Home from './components/Home.js';
 import MyCart from './components/MyCart.js';
@@ -21,7 +21,7 @@ class App extends Component {
           <Navbar />
           <Switch>
           <Route path="/Home"  component={Home} />  
-          <Route path="/Breedpets" component={Breedpets} /> 
+          <Route path="/Adopt" component={Adopt} /> 
           <Route path="/Volunteer" component={Volunteer} /> 
           <Route path="/MyCart" component={MyCart} /> 
       
